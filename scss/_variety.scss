@@ -1,0 +1,72 @@
+.variety {
+    margin-top: 150px;
+    @media (max-width: $desktop) {
+        margin-top: 80px;
+    }
+    @media (max-width: $tablet) {
+        margin-top: 60px;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    &__items {
+        display: flex;
+        justify-content: center;
+        max-width: 780px;
+        column-gap: 120px;
+        flex-flow: row wrap;
+        row-gap: 50px;
+        @media (max-width: $desktop) {
+            max-width: 710px;
+        }
+        @media (max-width: $tablet) {
+
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 180px;
+        &-text {
+            font-size: 26px;
+            font-weight: 500;
+            @media (max-width: $tablet) {
+                font-size: 16px;
+            }
+        }
+        @media (max-width: $desktop) {
+            width: 140px;
+        }
+        @media (max-width: $tablet) {
+            width: 100px;
+        }
+        img {
+            width: 180px;
+            height: 180px;
+            margin-bottom: 30px;
+            @media (max-width: $desktop) {
+                width: 140px;
+                height: 140px;
+            }
+            @media (max-width: $tablet) {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    &__title {
+        @include section_title();
+        margin-bottom: 26px;
+    }
+    &__text {
+        max-width: 580px;
+        margin-bottom: 70px;
+        @media (max-width: $tablet) {
+            margin-bottom: 50px;
+        }
+    }
+}

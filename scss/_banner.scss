@@ -1,0 +1,31 @@
+.banner {
+    &__inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 126px;  
+        @media (max-width: $desktop) {
+            margin-top: 66px;
+        } 
+    }
+    &__title {
+        @include section_title;
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+        margin-top: 26px;
+        max-width: 780px;
+        @media (max-width: $desktop) {
+            max-width: 480px;
+            margin-top: 20px;
+        }
+    }
+    &__order-btn {
+        margin-top: 70px;
+        @media (max-width: $desktop) {
+            margin-top: 35px;
+        }
+    }
+}

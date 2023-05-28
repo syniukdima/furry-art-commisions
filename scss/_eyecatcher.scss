@@ -1,0 +1,40 @@
+.eyecatcher {
+    margin: 165px 0 100px;
+    @media (max-width: $desktop) {
+        margin: 100px 0 60px;
+    }
+    @media (max-width: $tablet) {
+        margin: 90px 0 60px;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        @include section_title();
+        text-align: center;
+        width: 100%;
+        margin-bottom: 60px;
+        max-width: 780px;
+        @media (max-width: $desktop) {
+            max-width: 590px;
+        }
+        @media (max-width: $tablet) {
+            margin-bottom: 30px;
+        }
+    }
+    &__buttons {
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+        @media (max-width: $desktop) {
+            column-gap: 10px;
+        }
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+}

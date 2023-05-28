@@ -1,0 +1,49 @@
+.examples {
+    margin-top: 120px;
+    @media (max-width: $desktop) {
+        margin-top: 60px;
+    }
+    &__slider {
+        min-width: 0;
+    }
+    &__slide {
+        display: block;
+        justify-content: center;
+        width: 380px !important;
+        margin: 0 10px;
+        @media (max-width: $desktop) {
+            width: 230px !important;
+            margin: 0 5px;
+        }
+        @media (max-width: $phone) {
+            width: 200px !important;
+        }
+    }
+    &__image {
+        width: 100%;
+        margin-bottom: 30px;
+        @media (max-width: $desktop) {
+            margin-bottom: 25px;
+        }
+        @media (max-width: $tablet) {
+            margin-bottom: 15px;
+        }
+    }
+    &__image-title {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    &__title {
+        width: 100%;
+        text-align: center;
+        @include section_title();
+        margin-bottom: 50px;
+        @media (max-width: $desktop) {
+            margin-bottom: 25px;
+        }
+        @media (max-width: $tablet) {
+            margin-bottom: 20px;
+        }
+    }
+}
